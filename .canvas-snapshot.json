@@ -14,7 +14,7 @@
     "allowed_attempts": 3,
     "one_question_at_a_time": true,
     "question_count": 7,
-    "points_possible": 7.0,
+    "points_possible": 5.0,
     "cant_go_back": false,
     "access_code": null,
     "ip_filter": null,
@@ -71,7 +71,7 @@
     "only_visible_to_overrides": false,
     "assignment_group_id": 20001,
     "show_correct_answers_last_attempt": true,
-    "version_number": 4,
+    "version_number": 5,
     "has_access_code": false,
     "post_to_sis": false,
     "migration_id": null,
@@ -99,22 +99,22 @@
       "neutral_comments_html": "",
       "answers": [
         {
-          "id": 9214,
+          "id": "9214",
           "text": "Coupling",
           "left": "Coupling",
           "right": "Refers to the dependency two classes may have on each other. Can be measured based on the amount of relations between classes.",
           "comments": "",
           "comments_html": "",
-          "match_id": 548
+          "match_id": 7733
         },
         {
-          "id": 2666,
+          "id": "2666",
           "text": "Cohesion",
           "left": "Cohesion",
           "right": "Refers to how closely related the contents inside a class are to each other.",
           "comments": "",
           "comments_html": "",
-          "match_id": 5783
+          "match_id": 3749
         }
       ],
       "variables": null,
@@ -124,11 +124,11 @@
       "matches": [
         {
           "text": "Refers to the dependency two classes may have on each other. Can be measured based on the amount of relations between classes.",
-          "match_id": 548
+          "match_id": 7733
         },
         {
           "text": "Refers to how closely related the contents inside a class are to each other.",
-          "match_id": 5783
+          "match_id": 3749
         }
       ],
       "matching_answer_incorrect_matches": ""
@@ -208,31 +208,31 @@
       "neutral_comments_html": "",
       "answers": [
         {
-          "id": 148,
+          "id": "148",
           "text": "Association",
           "left": "Association",
           "right": "Represents a general relationship between two objects, where neither object is considered a part or member of the other.",
           "comments": "",
           "comments_html": "",
-          "match_id": 350
+          "match_id": 8301
         },
         {
-          "id": 6255,
+          "id": "6255",
           "text": "Aggregation",
           "left": "Aggregation",
           "right": "Represents a whole-part or parent-child relationship between objects and is a weak existence relationship,\nwhere the child object can exist independently of the parent.",
           "comments": "",
           "comments_html": "",
-          "match_id": 8694
+          "match_id": 4792
         },
         {
-          "id": 9362,
+          "id": "9362",
           "text": "Composition",
           "left": "Composition",
           "right": "Represents a whole-part or parent-child relationship between objects and is a strong existence relationship, where the child object can't exist independently of the parent.",
           "comments": "",
           "comments_html": "",
-          "match_id": 1301
+          "match_id": 7283
         }
       ],
       "variables": null,
@@ -242,15 +242,15 @@
       "matches": [
         {
           "text": "Represents a general relationship between two objects, where neither object is considered a part or member of the other.",
-          "match_id": 350
+          "match_id": 8301
         },
         {
           "text": "Represents a whole-part or parent-child relationship between objects and is a weak existence relationship,\nwhere the child object can exist independently of the parent.",
-          "match_id": 8694
+          "match_id": 4792
         },
         {
           "text": "Represents a whole-part or parent-child relationship between objects and is a strong existence relationship, where the child object can't exist independently of the parent.",
-          "match_id": 1301
+          "match_id": 7283
         }
       ],
       "matching_answer_incorrect_matches": ""
@@ -263,7 +263,7 @@
       "position": null,
       "question_name": "Fill in Multiple Blanks Question",
       "question_type": "fill_in_multiple_blanks_question",
-      "question_text": "<p>Given the following enum definition:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kd\">public</span> <span class=\"kd\">enum</span> <span class=\"nc\">WiperSpeed</span> <span class=\"o\">{</span>\n    <span class=\"no\">SLOW</span><span class=\"o\">,</span> <span class=\"no\">MEDIUM</span><span class=\"o\">,</span> <span class=\"no\">FAST</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>Given the following class definition:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Minivan</span> <span class=\"o\">{</span>\n\n    <span class=\"kd\">private</span> <span class=\"nc\">WiperSpeed</span> <span class=\"n\">speed</span><span class=\"o\">;</span>\n\n    <span class=\"kd\">public</span> <span class=\"nf\">Minivan</span><span class=\"o\">()</span> <span class=\"o\">{</span>\n\n    <span class=\"o\">}</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>The constructor method should initialize the wiper speed to slow.\nWhat value  should the variable <code>speed</code> be assigned? </p>\n\n<p>speed = [answer1]</p>",
+      "question_text": "<p>Given the following enum definition:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kd\">public</span> <span class=\"kd\">enum</span> <span class=\"nc\">WiperSpeed</span> <span class=\"o\">{</span>\n    <span class=\"no\">SLOW</span><span class=\"o\">,</span> <span class=\"no\">MEDIUM</span><span class=\"o\">,</span> <span class=\"no\">FAST</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>Given the following class definition:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Minivan</span> <span class=\"o\">{</span>\n\n    <span class=\"kd\">private</span> <span class=\"nc\">WiperSpeed</span> <span class=\"n\">speed</span><span class=\"o\">;</span>\n\n    <span class=\"kd\">public</span> <span class=\"nf\">Minivan</span><span class=\"o\">()</span> <span class=\"o\">{</span>\n        <span class=\"c1\">// set the speed to slow</span>\n    <span class=\"o\">}</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>The constructor method should initialize the wiper speed to slow.\nWhat value  should the variable <code>speed</code> be assigned? </p>\n\n<p>speed = [answer1] ;</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -273,7 +273,7 @@
       "neutral_comments_html": "",
       "answers": [
         {
-          "id": 7524,
+          "id": "7524",
           "text": "WiperSpeed.SLOW",
           "comments": "",
           "comments_html": "",
@@ -296,7 +296,7 @@
       "position": null,
       "question_name": "Fill in Multiple Blanks Question",
       "question_type": "fill_in_multiple_blanks_question",
-      "question_text": "<p>Given the following class definitions:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Wiper</span> <span class=\"o\">{</span>\n    <span class=\"kd\">private</span> <span class=\"kt\">boolean</span> <span class=\"n\">on</span><span class=\"o\">;</span>\n\n    <span class=\"kd\">public</span> <span class=\"kt\">boolean</span> <span class=\"nf\">isOn</span><span class=\"o\">()</span> <span class=\"o\">{</span>\n        <span class=\"k\">return</span> <span class=\"n\">on</span><span class=\"o\">;</span>\n    <span class=\"o\">}</span>\n\n    <span class=\"kd\">public</span> <span class=\"kt\">void</span> <span class=\"nf\">setOn</span><span class=\"o\">(</span><span class=\"kt\">boolean</span> <span class=\"n\">on</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n        <span class=\"k\">this</span><span class=\"o\">.</span><span class=\"na\">on</span> <span class=\"o\">=</span> <span class=\"n\">on</span><span class=\"o\">;</span>\n    <span class=\"o\">}</span>\n\n<span class=\"o\">}</span>\n</code></pre></div><div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Minivan</span> <span class=\"o\">{</span>\n\n  <span class=\"kd\">private</span> <span class=\"nc\">Wiper</span> <span class=\"n\">wiper</span><span class=\"o\">;</span>\n\n  <span class=\"kd\">public</span> <span class=\"kt\">void</span> <span class=\"nf\">driveThroughRain</span><span class=\"o\">()</span> <span class=\"o\">{</span>\n\n  <span class=\"o\">}</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>The <code>driveThroughRain()</code> method should turn the wiper on.</p>\n\n<p>What is the correct method call to do this?</p>\n\n<p>[answer1]</p>",
+      "question_text": "<p>Given the following class definitions:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Wiper</span> <span class=\"o\">{</span>\n    <span class=\"kd\">private</span> <span class=\"kt\">boolean</span> <span class=\"n\">on</span><span class=\"o\">;</span>\n\n    <span class=\"kd\">public</span> <span class=\"kt\">boolean</span> <span class=\"nf\">isOn</span><span class=\"o\">()</span> <span class=\"o\">{</span>\n        <span class=\"k\">return</span> <span class=\"n\">on</span><span class=\"o\">;</span>\n    <span class=\"o\">}</span>\n\n    <span class=\"kd\">public</span> <span class=\"kt\">void</span> <span class=\"nf\">setOn</span><span class=\"o\">(</span><span class=\"kt\">boolean</span> <span class=\"n\">on</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n        <span class=\"k\">this</span><span class=\"o\">.</span><span class=\"na\">on</span> <span class=\"o\">=</span> <span class=\"n\">on</span><span class=\"o\">;</span>\n    <span class=\"o\">}</span>\n\n<span class=\"o\">}</span>\n</code></pre></div><div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Minivan</span> <span class=\"o\">{</span>\n\n  <span class=\"kd\">private</span> <span class=\"nc\">Wiper</span> <span class=\"n\">wiper</span><span class=\"o\">;</span>\n\n  <span class=\"kd\">public</span> <span class=\"kt\">void</span> <span class=\"nf\">driveThroughRain</span><span class=\"o\">()</span> <span class=\"o\">{</span>\n     <span class=\"c1\">//Turn the wiper on</span>\n  <span class=\"o\">}</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>The <code>driveThroughRain()</code> method should turn the wiper on.</p>\n\n<p>What is the correct Java statement to do this?</p>\n\n<p>[answer1]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -306,7 +306,7 @@
       "neutral_comments_html": "",
       "answers": [
         {
-          "id": 8285,
+          "id": "8285",
           "text": "wiper.setOn(true);",
           "comments": "",
           "comments_html": "",
